@@ -1,45 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conssessionária</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Consumo de API com FETCH</title>
 </head>
 <body>
-    <h1 class="titulo">Conssessionária</h1>
-
-    <form class="formulario" id="formulario">
-        <div class="divisoria">
-            <label for="marca">Marca</label>
-            <input type="text" name="marca" id="marca" placeholder="Digite a marca" required>
-        </div>
-
-        <div class="divisoria">
-            <label for="modelo">Modelo</label>
-            <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo" required>
-        </div>
-
-        <div class="divisoria"> 
-            <label for="ano_lanc">Ano de Lançamento</label>
-            <input type="number" name="ano_lanc" id="ano_lanc" placeholder="Ex: 2015" required>
-        </div>
-
-        <div class="divisoria">
-            <label for="cor">Cor</label>
-            <input type="text" name="cor" id="cor" placeholder="Digite a cor" required>
-        </div>
-
-        <div class="divisoria_alternativa">
-            <input type="checkbox" name="ar" id="ar" value="ar">
-            <label for="ar">Ar Condicionado</label>
+    <main class="container">
+        <h1 class="titulo">Formulário de Cadastro</h1>
+        <div class="row">
+            <div class="input-box">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome:</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" required>
+                <label for="email">E-mail:</label>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="input-box">
+                <input type="text" id="cep" required>
+                <label for="cep">CEP:</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="endereco" required>
+                <label for="endereco">Endereço:</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="numero" required>
+                <label for="numero">Número:</label>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="input-box">
+                <input type="text" id="bairro" required>
+                <label for="bairro">Bairro:</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="cidade" required>
+                <label for="cidade">Cidade:</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="estado" required>
+                <label for="estado">Estado:</label>
+            </div>
+        </div><br>
+        <div class="row">
+            <button>Salvar</button>
         </div>
         
-        <button class="botao">Cadastrar</button>
-    </form>
+    </main>
+    <br>
+    <footer>
+        Infinity School † 2024
+    </footer>
 
-    <section class="cartoes" id="cartoes">
-    </section>
 
     <script src="./script.js"></script>
 </body>
