@@ -1,3 +1,0 @@
-*********************************************************************************
-Projeto consumindo API do ViaCEP para buscar dados do CEP digitado, 
-falta atualizar o botão para salvar os dados digitados no LocalStorage!
